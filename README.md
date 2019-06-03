@@ -48,22 +48,21 @@ Para desenvolvimento da API, foram utilizadas as seguintes ferramentas:
   <ol>
   <li> <b> Clonar repositório </b> <br />
 Através da clonagem do repositório, uma cópia do projeto será salva no seu computador. A partir desta, o projeto será executado, tornando também possível executar alterações (localmente) a partir da última versão lançada.<br />
-    ```
+    <code>
     git clone https://github.com/NessVsm/starwars.git
-    ```
+    </code>
   </li>
   <li> <b> Instalar dependências </b> <br />
     A execução correta do projeto depende da existência das dependências necessárias. Para tal, dentro da pasta do projeto (diretório/starwars), execute o seguinte comando.<br />
-    ```
+    <code>
     npm install
-    ```
+    </code>
   </li>
   <li><b> Seleção da porta para execução </b><br />
    Por padrão, o acesso à API se dará a partir da seguinte url: http://localhost:4200/people . Caso haja necessidade de alteração (por exemplo, caso a porta já esteja sendo utilizada), o seguinte comando poderá ser executado:
-    ```
+    <code>
     ng serve --port portadesejada
-    ```
-
+    </code>
   </li>
 
 
