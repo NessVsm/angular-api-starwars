@@ -18,60 +18,58 @@ Espécies (Species) -  Nome, classificação, designação, linguagem e filmes
 Para desenvolvimento da API, foram utilizadas as seguintes ferramentas:
 <ul>
   <li>
-    Angular - Framework para construção de interfaces com uso de Html, Css e Javascript </li>
+     <b> Angular </b> - Framework para construção de interfaces com uso de Html, Css e Javascript </li>
    <li>
-     Angular CLI - Ferramenta de apoio na criação de componentes Angular</li>
-  <li>
-    Typescript - Superset do Javascript </li>
-  <li>
-    SCC - Pré-processador CSS </li>
-  <li>
-    CSS Snippets </li>
+     <b>Angular CLI </b> - Ferramenta de apoio na criação de componentes Angular</li>
+   <li> 
+     <b> Typescript </b> - Superset do Javascript </li>
    <li>
-     The force Awakens - https://cssanimation.rocks/starwars/ </li>
-  <li>
-    Button - https://codepen.io/DanielWeiner/pen/iFadn </li>
-  <li>
-    Starwars Icons - http://www.iconarchive.com/show/starwars-icons-by-sensibleworld.html </li>
-  <li>
-    Sidebar Menu - https://codepen.io/arjancodes/pen/wtqIr </li>
-  <li>
-    Border - https://codepen.io/uiswarup/pen/RBByzW </li>
-  <li>
-    Loading Icon - https://2.bp.blogspot.com/-JiCTZL0TIt4/WMkrMCODCcI/AAAAAAAAA9g/1hG3JJpnO0EWXNLQwDFoyAu13f6Ks4H8QCLcB/s1600/animation.gif </li>
-  <li>
-    Lint - Teste de padrões<br >
-  </li>
-  <li>
-    Jasmine/Karma - Teste unitário
-  </li>
-    Protractor - Teste de integração
-  <li>
-  </li><br />
+     <b> SCC  </b> - Pré-processador CSS </li>
+   <li>
+     <b> CSS Snippets </b>
+     <ul>
+       <li> <b> The force Awakens </b> - https://cssanimation.rocks/starwars/ 
+       </li>
+       <li> <b> Button </b> - https://codepen.io/DanielWeiner/pen/iFadn 
+       </li>
+       <li> <b> Starwars Icons </b> - http://www.iconarchive.com/show/starwars-icons-by-sensibleworld.html 
+       </li>
+       <li> <b> Sidebar Menu </b> - https://codepen.io/arjancodes/pen/wtqIr 
+       </li>
+       <li> <b> Border </b> - https://codepen.io/uiswarup/pen/RBByzW 
+       </li>
+       <li> <b> Loading Icon </b> - https://2.bp.blogspot.com/-JiCTZL0TIt4/WMkrMCODCcI/AAAAAAAAA9g/1hG3JJpnO0EWXNLQwDFoyAu13f6Ks4H8QCLcB/s1600/animation.gif 
+       </li>
+     </ul>
+    </li> 
+    <li> <b> Lint </b> - Teste de padrões </li>
+    <li> <b> Jasmine/Karma </b> - Teste unitário </li>
+  <li> <b> Protractor </b> - Teste de integração </li>
+ </ul><br />
   
   # Como executar
   
-  Para execução do projeto será necessário ter instalado previamente em sua máquina o Git, o Node.js e o Angular CLI para então executar os seguintes passos.
+  Para execução do projeto será necessário ter instalado previamente em sua máquina o Git, o Node.js e o Angular CLI para então executar os seguintes passos.<br />
    <b>1. Clonar repositório </b> <br />
-Através da clonagem do repositório, uma cópia do projeto será salva no seu computador. A partir desta, o projeto será executado, tornando também possível executar alterações (localmente) a partir da última versão lançada.<br />
+Através da clonagem do repositório, uma cópia do projeto será salva no seu computador. A partir desta, o projeto será executado, tornando também possível executar alterações (localmente) a partir da última versão lançada.<br /><br />
     <code>
     git clone https://github.com/NessVsm/starwars.git
     </code><br />
    <b>2. Instalar dependências </b> <br />
-    A execução correta do projeto depende da existência das dependências necessárias. Para tal, dentro da pasta do projeto (diretório/starwars), execute o comando.<br />
+    A execução correta do projeto depende da existência das dependências necessárias. Para tal, dentro da pasta do projeto (diretório/starwars), execute o comando.<br /><br />
     <code>
     npm install
     </code><br />
     <b>3. Executando o servidor e seleção da porta </b><br />
    Após a instalação das dependências, já é possível inicilizar o servidor que irá rodar o projeto. 
-  Por padrão, o acesso à API se dará a partir da seguinte url: http://localhost:4200/people. Caso haja necessidade de alteração (por exemplo, caso a porta já esteja sendo utilizada), o seguinte comando poderá ser executado:<br />
+  Por padrão, o acesso à API se dará a partir da seguinte url: http://localhost:4200/people. Caso haja necessidade de alteração (por exemplo, caso a porta já esteja sendo utilizada), o seguinte comando poderá ser executado:<br /><br />
     <code>
     ng serve --port portadesejada
     </code><br />
 
   # Testando
   
-  Para garantir a qualidade do projeto, foram executados os testes:
+  Para garantir a qualidade do projeto, foram executados os testes:<br />
   <code> ng lint </code><br />
   <code> ng test </code><br />
   <code> ng e2e </code><br />
