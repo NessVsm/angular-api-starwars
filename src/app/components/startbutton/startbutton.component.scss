@@ -1,0 +1,54 @@
+$color_1:rgb(000,000,000);
+$color_2: rgb(255,215,0);
+$color_3: rgb(255,255,255);
+
+.button-wrapper{
+  position: absolute;
+  left:41%;
+  bottom:-50%;
+  width:15%;
+}
+.brk-btn {
+  position: relative;
+  background: none;
+  color: $color_3;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2em solid $color_2;
+  padding: 0.5em 1em;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: $color_1;
+    height: 0.3em;
+    right: 20%;
+    top: -0.21em;
+    transform: skewX(-45deg);
+    -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: $color_1;
+    height: 0.3em;
+    left: 20%;
+    bottom: -0.25em;
+    transform: skewX(45deg);
+    -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  &:hover {
+    cursor:pointer;
+    &::before {
+      right: 80%;
+    }
+    &::after {
+      left: 80%;
+    }
+  }
+}

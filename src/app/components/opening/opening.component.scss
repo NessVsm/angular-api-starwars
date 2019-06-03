@@ -1,0 +1,159 @@
+//colors
+$black: #000;
+$white: #fff;
+
+//fonts
+$font_0: ITC Serif Gothic;
+$font_1: Lato;
+
+//urls
+$url_0: url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+
+.wars {
+	animation: wars 10s ease-out infinite;
+	bottom: -0.5em;
+	position: absolute;
+}
+.star {
+	animation: star 10s ease-out infinite;
+	bottom: -0.5em;
+	position: absolute;
+}
+.byline {
+	animation: move-byline 10s linear infinite;
+	color: $white;
+	font-family: $font_0, $font_1;
+	font-size: 2.25em;
+	left: -2em;
+	letter-spacing: 0.4em;
+	right: -2em;
+	text-align: center;
+	text-transform: uppercase;
+	top: 29%;
+	position: absolute;
+	span {
+		animation: spin-letters 10s linear infinite;
+		display: inline-block;
+	}
+}
+@keyframes star {
+	0% {
+		opacity: 0;
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: scale(1.5) translateY(-0.75em);
+	}
+	20% {
+		opacity: 1;
+	}
+	89% {
+		opacity: 1;
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(-1000em);
+	}
+}
+@keyframes wars {
+	0% {
+		opacity: 0;
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: scale(1.5) translateY(0.5em);
+	}
+	20% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(-1000em);
+	}
+}
+@keyframes spin-letters {
+	0% {
+		opacity: 0;
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotateY(90deg);
+	}
+	10% {
+		opacity: 0;
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotateY(90deg);
+	}
+	30% {
+		opacity: 1;
+	}
+	70% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotateY(0);
+		opacity: 1;
+	}
+	86% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotateY(0);
+		opacity: 1;
+	}
+	95% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes move-byline {
+	0% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(5em);
+	}
+	100% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(0);
+	}
+}
+.starwars-demo {
+	//Instead of the line below you could use @include perspective($p)
+	perspective: 800px;
+	//Instead of the line below you could use @include transform-style($style)
+	transform-style: preserve3d;
+	height: 17em;
+	left: 50%;
+	position: absolute;
+	top: 53%;
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: translate(-50%, -50%);
+    width: 34em;
+}
+body {
+	background: $black $url_0;
+}
+img {
+	width: 100%;
+}
+.star {
+	position: absolute;
+	top: -0.75em;
+}
+@media only screen and(max-width: 600px) {
+	.starwars-demo {
+		font-size: 10px;
+	}
+}
+@media only screen and(max-width: 480px) {
+	.starwars-demo {
+		font-size: 7px;
+	}
+}
+HTML CSS JS ResultEDIT ON .star {
+	animation: star 10s ease-out infinite;
+}
+Resources 1×0.5×0.25× Rerun {
+}
+
+

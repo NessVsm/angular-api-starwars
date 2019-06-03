@@ -1,0 +1,26 @@
+<div class="info-container">
+    <div class="background-img">
+        <div class="box">
+            <div *ngIf="loading">
+                <img id="loadingspinner" src="https://media1.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif?cid=790b76115cf3158f44697679631c842f&rid=giphy.gif
+            " /> 
+            </div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div *ngIf ="!loading" class="content">
+                <div class="content-text">
+                    <div class="content-title">{{film?.title}}</div>
+                    <div class="content-info"><b>Episode:</b> {{film?.episode_id}}</div>
+                    <div class="content-info"><b>Director: </b> {{film?.director}} </div>
+                    <div class="content-info"><b>Producer: </b>{{film?.producer}}</div>  
+                    <div class="content-info"> <b> Released in {{film?.release_date}}</b></div>
+                </div>
+                <div class="content-button">
+                    <button (click)="filmInfo();"> Next </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

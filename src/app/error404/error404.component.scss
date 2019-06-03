@@ -1,0 +1,59 @@
+
+$color_1:rgb(000,000,000);
+$color_2: rgb(255,215,0);
+
+.error404-div{
+    position: absolute;
+    left: 34%;
+    top: 30%;
+}
+
+
+.error404-speech:after {
+    content: '';
+    border: 20px solid transparent;
+    border-top-color: $color_1;
+    border-bottom: 0;
+
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+  .error404-speech {
+    position: relative;
+    font-family: arial;
+    font-size: 1.1em;
+    border:1px dotted $color_2;
+    background: $color_1;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+  }
+  
+  .bottom:after {
+    /* [THESE WILL CREATE THE TRIANGLE] */
+    content: '';
+    border: 20px solid transparent;
+    border-top-color:$color_1;
+    border-bottom: 0;
+    /* [THESE WILL POSITION THE TRIANGLE] */
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -20px;
+  }
+  
+  #yoda-img{
+      width:200px;
+      height:200px;
+      margin-left:25%;
+  }
+  #error404-msg{
+    margin-left: 34%;
+    font-size: 25px;
+    color: $color_2;
+    margin-bottom: 21%;
+  }

@@ -1,0 +1,26 @@
+<div class="info-container">
+    <div class="background-img">
+        <div class="box">
+            <div *ngIf="loading">
+                <img id="loadingspinner" src="https://media1.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif?cid=790b76115cf3158f44697679631c842f&rid=giphy.gif
+            " /> 
+            </div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div *ngIf ="!loading" class="content">
+                <div class="content-text">
+                    <div class="content-title">{{specie?.name}}</div>
+                    <div class="content-info"><b>Classification:</b> {{specie?.classification}}</div>
+                    <div class="content-info"><b>Designation: </b> {{specie?.designation}} </div>
+                    <div class="content-info"><b> Language: </b>{{specie?.language}}</div>  
+                    <div class="content-info"> <b> Appears in {{specie?.films.length}} {{specie?.films.length === 1 ? "film" : "films"}}</b></div>
+                </div>
+                <div class="content-button">
+                    <button (click)="specieInfo();"> Next </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
