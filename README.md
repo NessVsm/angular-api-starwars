@@ -39,33 +39,54 @@ Para desenvolvimento da API, foram utilizadas as seguintes ferramentas:
     Border - https://codepen.io/uiswarup/pen/RBByzW </li>
   <li>
     Loading Icon - https://2.bp.blogspot.com/-JiCTZL0TIt4/WMkrMCODCcI/AAAAAAAAA9g/1hG3JJpnO0EWXNLQwDFoyAu13f6Ks4H8QCLcB/s1600/animation.gif </li>
-  <br /><br /><br />
+  <li>
+    Lint - Teste de padrões<br >
+  </li>
+  <li>
+    Jasmine/Karma - Teste unitário
+  </li>
+    Protractor - Teste de integração
+  <li>
+  </li><br />
   
   # Como executar
   
   Para execução do projeto será necessário ter instalado previamente em sua máquina o Git, o Node.js e o Angular CLI para então executar os seguintes passos.
-
-  <ol>
-  <li> <b> Clonar repositório </b> <br />
+   <b>1. Clonar repositório </b> <br />
 Através da clonagem do repositório, uma cópia do projeto será salva no seu computador. A partir desta, o projeto será executado, tornando também possível executar alterações (localmente) a partir da última versão lançada.<br />
     <code>
     git clone https://github.com/NessVsm/starwars.git
-    </code>
-  </li>
-  <li> <b> Instalar dependências </b> <br />
-    A execução correta do projeto depende da existência das dependências necessárias. Para tal, dentro da pasta do projeto (diretório/starwars), execute o seguinte comando.<br />
+    </code><br />
+   <b>2. Instalar dependências </b> <br />
+    A execução correta do projeto depende da existência das dependências necessárias. Para tal, dentro da pasta do projeto (diretório/starwars), execute o comando.<br />
     <code>
     npm install
-    </code>
-  </li>
-  <li><b> Seleção da porta para execução </b><br />
-   Por padrão, o acesso à API se dará a partir da seguinte url: http://localhost:4200/people . Caso haja necessidade de alteração (por exemplo, caso a porta já esteja sendo utilizada), o seguinte comando poderá ser executado:
+    </code><br />
+    <b>3. Executando o servidor e seleção da porta </b><br />
+   Após a instalação das dependências, já é possível inicilizar o servidor que irá rodar o projeto. 
+  Por padrão, o acesso à API se dará a partir da seguinte url: http://localhost:4200/people. Caso haja necessidade de alteração (por exemplo, caso a porta já esteja sendo utilizada), o seguinte comando poderá ser executado:<br />
     <code>
     ng serve --port portadesejada
-    </code>
+    </code><br />
+
+  # Testando
+  
+  Para garantir a qualidade do projeto, foram executados os testes:
+  <code> ng lint </code><br />
+  <code> ng test </code><br />
+  <code> ng e2e </code><br />
+  
+  Através destes testes, podem ser encontrados tanto erros referentes à boas práticas quanto erros que podem vir a comprometer a condução do projeto. Após a execução dos testes, foram realizadas todas as mudanças pertinentes.
+  
+  # Funcionalidades Adicionais
+  
+  <ul>
+  <li><b> Seleção de diferentes categorias </b> - Além de planetas, é possível também obter informações sobre diferentes categorias relacionadas a Starwars<br />
   </li>
-
-
+  <li><b> Tratamento de página não encontrada </b> - Caso o usuário digite uma página que não corresponda a nenhuma das rotas, será exibido uma página de erro pré-configurada<br />
+  </li>
+  </ul>
+  
 
 
 
