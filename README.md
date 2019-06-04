@@ -1,21 +1,21 @@
 # Descrição
 
-Este projeto foi realizado a partir do desafio proposto pela companhia B2W e da necessidade da criação de uma API onde pudessem ser consultadas as principais informações a respeito de um elementos da franquia Starwars.
+Este projeto foi realizado a partir do desafio proposto pela companhia B2W e da necessidade da criação de uma API onde pudessem ser consultadas as principais informações relacionadas à franquia Starwars.
 
 # Objetivo
 
 Apresentar informações relacionadas a seis (6) diferentes categorias da saga, através da seleção aleatória do elemento a ser apresentado:
 
-Planetas (Planets) - Nome, população, clima, terreno, filmes em que aparece
-Espaçonaves (Starships) - Nome, modelo, manufaturação, passageiros e filmes
-Veículos (Vehicles) - Nome, modelo, manufaturação, passageiros e filmes
-Pessoas (People) - Nome, data de nascimento, gênero, altura e filmes
-Filmes (Films) - Nome, episódio, diretor, produtor e data de lançamento
-Espécies (Species) -  Nome, classificação, designação, linguagem e filmes
+- <b> Planetas (Planets) </b> - Nome, população, clima, terreno, filmes em que aparece <br />
+- <b> Espaçonaves (Starships) </b> - Nome, modelo, manufaturação, passageiros e filmes <br />
+- <b> Veículos (Vehicles) </b> - Nome, modelo, manufaturação, passageiros e filmes <br />
+- <b>b Pessoas (People) </b>- Nome, data de nascimento, gênero, altura e filmes <br />
+- <b> Filmes (Films) </b> - Nome, episódio, diretor, produtor e data de lançamento <br />
+- <b> Espécies (Species) </b> -  Nome, classificação, designação, linguagem e filmes<br /><br />
 
 # Tecnologias
 
-Para desenvolvimento da API, foram utilizadas as seguintes ferramentas:
+No desenvolvimento da API, foram utilizadas as seguintes tecnologias:
 <ul>
   <li>
      <b> Angular </b> - Framework para construção de interfaces com uso de Html, Css e Javascript </li>
@@ -60,7 +60,7 @@ Através da clonagem do repositório, uma cópia do projeto será salva no seu c
     <code>
     npm install
     </code><br />
-    <b>3. Executando o servidor e seleção da porta </b><br />
+    <b>3. Executar o servidor e seleção da porta </b><br />
    Após a instalação das dependências, já é possível inicilizar o servidor que irá rodar o projeto. 
   Por padrão, o acesso à API se dará a partir da seguinte url: http://localhost:4200/people. Caso haja necessidade de alteração (por exemplo, caso a porta já esteja sendo utilizada), o seguinte comando poderá ser executado:<br /><br />
     <code>
