@@ -1,3 +1,5 @@
+Url do projeto: https://desafio-b2w-starwars.herokuapp.com/starwars
+
 # Descrição
 
 Este projeto foi realizado a partir do desafio proposto pela companhia B2W e da necessidade da criação de uma API onde pudessem ser consultadas as principais informações relacionadas à franquia Starwars.
@@ -9,7 +11,7 @@ Apresentar informações relacionadas a seis (6) diferentes categorias da saga, 
 - <b> Planetas (Planets) </b> - Nome, população, clima, terreno, filmes em que aparece <br />
 - <b> Espaçonaves (Starships) </b> - Nome, modelo, manufaturação, passageiros e filmes <br />
 - <b> Veículos (Vehicles) </b> - Nome, modelo, manufaturação, passageiros e filmes <br />
-- <b>b Pessoas (People) </b>- Nome, data de nascimento, gênero, altura e filmes <br />
+- <b> Pessoas (People) </b>- Nome, data de nascimento, gênero, altura e filmes <br />
 - <b> Filmes (Films) </b> - Nome, episódio, diretor, produtor e data de lançamento <br />
 - <b> Espécies (Species) </b> -  Nome, classificação, designação, linguagem e filmes<br /><br />
 
@@ -54,18 +56,18 @@ No desenvolvimento da API, foram utilizadas as seguintes tecnologias:
 Através da clonagem do repositório, uma cópia do projeto será salva no seu computador. A partir desta, o projeto será executado, tornando também possível executar alterações (localmente) a partir da última versão lançada.<br /><br />
     <code>
     git clone https://github.com/NessVsm/starwars.git
-    </code><br />
+    </code><br /><br >
    <b>2. Instalar dependências </b> <br />
     A execução correta do projeto depende da existência das dependências necessárias. Para tal, dentro da pasta do projeto (diretório/starwars), execute o comando.<br /><br />
     <code>
     npm install
-    </code><br />
+    </code><br /><br />
     <b>3. Executar o servidor e seleção da porta </b><br />
    Após a instalação das dependências, já é possível inicilizar o servidor que irá rodar o projeto. 
   Por padrão, o acesso à API se dará a partir da seguinte url: http://localhost:4200/people. Caso haja necessidade de alteração (por exemplo, caso a porta já esteja sendo utilizada), o seguinte comando poderá ser executado:<br /><br />
     <code>
     ng serve --port portadesejada
-    </code><br />
+    </code><br /><br />
 
   # Testando
   
